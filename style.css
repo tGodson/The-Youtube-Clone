@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* font-weight: 100; */
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+   
+}
+
+
+html {
+  background: #f5f5f5;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    height: 65px;
+    /* top: 0; */
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .leftbtn {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-icon {
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    margin-right: 16px;
+  }
+  
+  .yt-logo {
+    width: 125px;
+    height: 24px;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+  }
+  
+  .search-bar {
+    height: 30px;
+    width: 65%;
+    border: #E2E2E2 1px solid;
+    font-size: 1em;
+  }
+  
+  .search-icon {
+    width: 22px;
+    height: 22px;
+    /* padding: px; */
+  }
+  
+  .search-button {
+    margin-right: 60px;
+    width: 43px;
+    height: 30px;
+    background: rgb(240, 237, 237);
+  }
+  
+  .header-image {
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    border: 0;
+  }
+  
+  .rightbtn {
+    display: flex;
+    /* justify-items: center; */
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .topright {
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    margin-left: 15px;
+  }
+  
+  .sign-in_btn {
+    border: none;
+    padding: 7px 10px;
+    background-color:#167AC6;
+    color: #fff;
+    border-radius: 4px;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    /* margin: 60px; */
+  }
+  
+  .eli{
+    padding-top: 25px;
+  }
+
+  aside.right {
+    /* margin-top: 0px;
+    padding-top: 0px;
+    margin-right: 20px; */
+    margin-right: 0px;
+    margin-top: 6.09em;
+    padding: 10px;
+  }
+
+  .left {
+    margin: 1.1em;
+    width: 50%;
+  }
+  
+  .left .video {
+    margin-top: 5em;
+    height: 360px;
+    width: 100%;
+  }
+  /* ----------------------------------------------------------------------------- */
+  .container {
+    margin-top: 50px;
+    /* padding: px; */
+    /* border: blue 2px solid; */
+  }
+
+  .comment{
+    /* border: chartreuse 2px solid; */
+    padding: 10px;
+    background: #fff;
+  }
+
+  /* ----------------------------------------------------------------------------- */
+  /* .video {
+    margin-top: 40px; */
+    /* border: #c00 2px solid;
+} */
+
+  .video iframe {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .data-container {
+    border-bottom: 1px solid #a1a1a1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0;
+  }
+  
+  .viewcount {
+    display: flex;
+  }
+  
+  .meta-data {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0;
+    padding: 10px;
+    background: #fff;
+    font-size: .8em;
+  }
+  
+  .like,
+  .dislike {
+    border-bottom: 2px solid #606060;
+  }
+  
+  .likes-menu {
+    color: #696868;
+    display: flex;
+  }
+  
+  .likes-menu div {
+    padding: 15px;
+  }
+  
+  div.description {
+    padding: 10px;
+    background: #fff;
+    margin: 10px 0;
+    /* border: brown 1px solid; */
+  }
+
+  .description {
+    /* border-bottom: 0.5px solid #9e9e9eb8; */
+    display: flex;
+    /* margin: 1em 0; */
+  }
+  
+  .thumb-logo img {
+    border-radius: 50%;
+  }
+  
+  .subscribe-btn {
+    background: #c00;
+    border: none;
+    color: #fff;
+    float: right;
+    font-weight: 700;
+    margin-top: -28px;
+    padding: 10px 15px;
+  }
+  
+  .content {
+    margin-left: 8px;
+    margin-top: 5px;
+  }
+  
+  .user-content {
+    width: 100%;
+  }
+  
+  .content a {
+    color: #696868;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .description p {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  
+  /* a, button {
+    cursor: pointer;
+  } */
+
+  .sort {
+    color: #696868;
+  }
+  
+  .comment-input {
+    align-items: center;
+    display: flex;
+    margin: 2rem 0;
+  }
+  
+  .user {
+    align-items: center;
+    background: #c00;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 40px;
+    justify-content: center;
+    margin-bottom: 1px;
+    margin-right: 8px;
+    text-align: center;
+    text-decoration: none;
+    width: 40px;
+  }
+  
+  .user-2 {
+    background: green;
+  }
+  
+  .comment-input input {
+    background: transparent;
+    border: none;
+    border-bottom: 0.5px solid #9e9e9eb8;
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+    width: 70%;
+  }
+  
+  .comment-box {
+    display: flex;
+  }
+  
+  .name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+  
+  .name span {
+    color: #606060;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-left: 1rem;
+  }
+  
+  .comment-box p {
+    color: #494949;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .comment-data span {
+    color: #696868;
+    font-size: 0.9rem;
+    margin-right: 1rem;
+  }
+  
+  
+  .right {
+    /* border: coral 2px solid; */
+    background: #fff;
+    padding: 10px;
+    margin-right: 10%;
+    /* margin-top: 2em; */
+    width: 30%;
+    
+  }
+  
+  .related-video iframe {
+    height: 100px;
+    width: 200px;
+  }
+  
+  .related-video img {
+    height: 100px;
+    width: auto;
+  }
+  
+  .up-next .autoplay {
+    float: right;
+  }
+  
+  .related-video a {
+    display: flex;
+    text-decoration: none;
+  }
+
+  .related-video {
+    display: flex;
+    margin-bottom: 13px;
+    margin-top: 10px;
+  }
+  
+  .related-video .related-content {
+    margin-left: 10px;
+  }
+  
+  .related-content .related-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+    color: #595959;
+  }
+  
+  .related-content p {
+    color: #898989;
+    font-size: 0.8rem;
+  }
+  
+  .related-paragraph {
+    margin-top: 10px;
+  }
+  
+  hr {
+    border: 0.8px solid;
+    color: #e0e0e0;
+  }
+  
+  .footer-btn {
+    padding: 10px;
+    margin: 15px;
+    border: solid 1px rgba(240, 237, 237, 0);
+  }
+  footer{
+    background-color: #fff;
+  }
+  .footer1 {
+    border-bottom: solid 1px #a1a1a1;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    margin-left: 15px;
+  }
+  .footer1 button {
+    border: solid 1px #a1a1a1;
+  }
+  .footer2 span, .footer3 span {
+    margin: 20px;
+  }
+  .footer2 {
+    padding: 15px 0 5px 0;
+  }
+  .footer3 {
+   padding: 5px 0;
+   
+  } 
+  .footer4 {
+    padding: 35px;
+  }
+
