@@ -12,34 +12,36 @@
 </head>
 <body>
   <header>
-    <div>
-        <img src="./img/menu-button.png" alt="menu icon button" id="menu-icon">
-    </div>
+    <div class="leftbtn">
+        <img src="./img/menu-button.png" alt="menu icon button" class="menu-icon">
 
-        <a href="https://youtube.com/"></a><img src="./img/yt-logo.jpg" alt="youtube logo" id="yt-logo"></a>
+        <a href="https://youtube.com/"><img src="./img/yt-logo.jpg" alt="youtube logo" class="yt-logo"></a>
+      </div>
 
-    <div id="search-container">
-        <input type="text" placeholder="Search..." id="search-bar">
-        <button id="search-button">
-            <img src="./img/search-icon.jpg" alt="search icon" id="search-icon">
+    <div class="search-container">
+        <input type="text" placeholder="Search..." class="search-bar">
+        <button class="search-button">
+            <img src="./img/search-icon.jpg" alt="search icon" class="search-icon">
         </button>
     </div>
 
-    <button class="topright"><img id="upload" class="header-image" src="./img/upload-vid.jpg" alt="upload video"></button>
+    <div class="rightbtn">
+      <button class="topright"><img  class="header-image" src="./img/upload-vid.jpg" alt="upload video"></button>
 
-    <button class="topright"><img id="ytapps" class="header-image" src="./img/ytapp.png" alt="youtube apps"></button>
+      <button class="topright"><img  class="header-image" src="./img/ytapp.png" alt="youtube apps"></button>
 
-    <button class="topright"><img id="options" class="header-image" src="./img/ellipsis.png" alt="options"></button>
-      
-    <button id="sign-in_btn">Sign in</button>
+      <button class="topright"><img class="header-image" src="./img/ellipsis.png" alt="options"></button>
+        
+      <button class="sign-in_btn topright">Sign in</button>
+    </div>
   </header>
-    </header> 
-  </header>
+
 
     <!-- main container for video and related video -->
     
-    <section class="main">
-      <main class="left">
+    
+    <main class="main">
+      <section class="left">
         <div class="container">
           <!-- Embedded youtube video -->
           <div class="video">
@@ -73,8 +75,8 @@
             </div>
           </div>
         </div>
-
-          <!-- video description -->
+        
+        <!-- video description -->
         <article>
           <div class="description">
             <div class="thumb-logo">
@@ -139,7 +141,7 @@
             </div>
           </div>
         </article>
-      </main>
+      </section>
       <!-- Recommended video -->
       <aside class="right">
         <div class="container-right">
@@ -147,176 +149,219 @@
             <span>Up Next</span>
             <span class="autoplay"
               >Autoplay <i class="fas fa-toggle-on"></i
-            ></span>
-          </div>
+                ></span>
+              </div>
           <div class="related-video">
-            <img
+            <a href="#">
+              <img
               src="./img/contr.jpg"
-              alt="#"
-            />
-            <div class="related-content">
-              <h4 class="related-title">
-                Contributing to Open Source Part II: The Real Way
-              </h4>
-              <p class="related-paragraph">The Odin Project</p>
-              <p>Recommended for you</p>
-            </div>
+                alt=""
+              />
+              <div class="related-content">
+                <h4 class="related-title">
+                  Contributing to Open Source Part II: The Real Way
+                </h4>
+                <p class="related-paragraph">The Odin Project</p>
+                <p>Recommended for you</p>
+              </div>
+            </a>
           </div>
           <hr />
         </div>
         <!-- Related videos -->
         <div class="related-video">
-          <img
-            src="./img/convo.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">
-              Convolutional Neural Networks (CNNs) explained
-            </h4>
-            <p class="related-paragraph">Deeplizard</p>
-            <p>31K views</p>
-          </div>
+          <a href="#">
+            <img
+              src="./img/convo.jpg"
+              alt=""
+            />
+            <div class="related-content">
+              <h4 class="related-title">
+                Convolutional Neural Networks (CNNs) explained
+              </h4>
+              <p class="related-paragraph">Deeplizard</p>
+              <p>31K views</p>
+            </div>
+          </a>
         </div>
         <div class="related-video">
-          <img
-            src="./img/top10.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">Top 10 Linux Job Interview Questions</h4>
-            <p class="related-paragraph">freeCodeCamp.org</p>
-            <p>74K views</p>
-          </div>
+          <a href="#">
+            <img
+              src="./img/top10.jpg"
+              alt=""
+            />
+            <div class="related-content">
+              <h4 class="related-title">Top 10 Linux Job Interview Questions</h4>
+              <p class="related-paragraph">freeCodeCamp.org</p>
+              <p>74K views</p>
+            </div>
+          </a>
         </div>
         <div class="related-video">
-          <img
+          <a href="#">
+            <img
             src="./img/why-I-left.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">
-              Why I left my job at Google (as a software engineer)
-            </h4>
-            <p class="related-paragraph">TechLead</p>
-            <p>1.4M views</p>
-          </div>
+              alt=""
+              />
+            <div class="related-content">
+              <h4 class="related-title">
+                Why I left my job at Google (as a software engineer)
+              </h4>
+              <p class="related-paragraph">TechLead</p>
+              <p>1.4M views</p>
+            </div>
+          </a>
         </div>
         <div class="related-video">
-          <img
+          <a href="#">
+            <img
             src="./img/vbasic.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">Visual Basic .Net : Search in Access Database - DataGridView</h4>
-            <p class="related-paragraph">Godson</p>
-            <p>4.6K views</p>
-          </div>
+              alt=""
+            />
+            <div class="related-content">
+              <h4 class="related-title">Visual Basic .Net : Search in Access Database - DataGridView</h4>
+              <p class="related-paragraph">Godson</p>
+              <p>4.6K views</p>
+            </div>
+          </a>
         </div>
         <div class="related-video">
-          <img
-            src="./img/git and git.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">Git & GitHub: Pull requests (10/11)</h4>
-            <p class="related-paragraph">Codecourse</p>
-            <p>3M views</p>
-          </div>
+          <a href="#">
+            <img
+              src="./img/git-and-github.jpg"
+              alt=""
+            />
+            <div class="related-content">
+              <h4 class="related-title">Git & GitHub: Pull requests (10/11)</h4>
+              <p class="related-paragraph">Codecourse</p>
+              <p>3M views</p>
+            </div>
+          </a>
         </div>
         <div class="related-video">
-          <img
+          <a href="#">
+            <img
             src="./img/how-to-not.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">How To NOT Look Like A Tourist | What To Wear In Europe</h4>
-            <p class="related-paragraph">Audrey Coyne</p>
-            <p>105K views</p>
-          </div>
+            alt=""
+            />
+            <div class="related-content">
+              <h4 class="related-title">How To NOT Look Like A Tourist | What To Wear In Europe</h4>
+              <p class="related-paragraph">Audrey Coyne</p>
+              <p>105K views</p>
+            </div>
+          </a>
         </div>
         <div class="related-video">
-          <img
-            src="./img/How-to-get.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">'How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft' </h4>
-            <p class="related-paragraph">Elijah</p>
-            <p>4.9M views</p>
-          </div>
+          <a href="#">
+            <img
+              src="./img/How-to-get.jpg"
+              alt=""
+            />
+            <div class="related-content">
+              <h4 class="related-title">'How to Get a Job at the Big 4 - Amazon, Facebook, Google & Microsoft' </h4>
+              <p class="related-paragraph">Elijah</p>
+              <p>4.9M views</p>
+            </div>
+          </a>
         </div>
         <div class="related-video">
-          <img
+          <a href="">
+            <img
             src="./img/max-stoipler.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">Max Stoiber - I want you to contribute to open source</h4>
-            <p class="related-paragraph">ReactRally</p>
-            <p>4.9M views</p>
-          </div>
+              alt=""
+              />
+            <div class="related-content">
+              <h4 class="related-title">Max Stoiber - I want you to contribute to open source</h4>
+              <p class="related-paragraph">ReactRally</p>
+              <p>4.9M views</p>
+            </div>
+          </a>
         </div>
         <div class="related-video">
-          <img
-            src="./img/carbon.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">Carbon M1 Super Fast 3D Printer Demo!</h4>
-            <p class="related-paragraph">Adam Savage</p>
-            <p>73K views</p>
-          </div>
+          <a href="">
+            <img
+              src="./img/carbon.jpg"
+              alt=""
+            />
+            <div class="related-content">
+              <h4 class="related-title">Carbon M1 Super Fast 3D Printer Demo!</h4>
+              <p class="related-paragraph">Adam Savage</p>
+              <p>73K views</p>
+            </div>
+          </a>
         </div>
         <div class="related-video">
-          <img
+          <a href="">
+            <img
             src="./img/3D.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">Google Earth 3D Illustration - Architectural Presentation [Photoshop]</h4>
-            <p class="related-paragraph">LETS ARCHITECTURE</p>
-            <p>59.1K views</p>
-          </div>
+              alt="#"
+              />
+            <div class="related-content">
+              <h4 class="related-title">Google Earth 3D Illustration - Architectural Presentation [Photoshop]</h4>
+              <p class="related-paragraph">LETS ARCHITECTURE</p>
+              <p>59.1K views</p>
+            </div>
+          </a>
         </div>
         <div class="related-video">
-          <img
+          <a href="">
+            <img
             src="./img/running.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">Running an SQL Injection Attack - Computerphile</h4>
-            <p class="related-paragraph">Ariel Camus</p>
-            <p>34M views</p>
-          </div>
+              alt="#"
+              />
+            <div class="related-content">
+              <h4 class="related-title">Running an SQL Injection Attack - Computerphile</h4>
+              <p class="related-paragraph">Ariel Camus</p>
+              <p>34M views</p>
+            </div>
+          </a>
         </div>
         <div class="related-video">
-          <img
-            src="./img/your-first.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">Your First GitHub Pull Request (in 10 Mins)</h4>
-            <p class="related-paragraph">Jackson Bates</p>
-            <p>58K views</p>
-          </div>
+          <a href="#">
+            <img
+              src="./img/your-first.jpg"
+              alt="#"
+            />
+            <div class="related-content">
+              <h4 class="related-title">Your First GitHub Pull Request (in 10 Mins)</h4>
+              <p class="related-paragraph">Jackson Bates</p>
+              <p>58K views</p>
+            </div>
+          </a>
         </div>
         <div class="related-video">
-          <img
-            src="./img/rest.jpg"
-            alt="#"
-          />
-          <div class="related-content">
-            <h4 class="related-title">REST API concepts and examples</h4>
-            <p class="related-paragraph">WebConcepts</p>
-            <p>1.2M views</p>
-          </div>
+          <a href="">
+            <img
+              src="./img/rest.jpg"
+              alt="#"
+              />
+            <div class="related-content">
+              <h4 class="related-title">REST API concepts and examples</h4>
+              <p class="related-paragraph">WebConcepts</p>
+              <p>1.2M views</p>
+            </div>
+          </a>
         </div>
       </aside>
-</section>
+    </main>
 <footer>
   <div class="footer1">
-    <a href="https://youtube.com/"><img src="./img/yt-logo.jpg" alt="youtube logo" id="yt-logo"></a>
+    <p>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+          <img style="border:0;width:88px;height:31px"
+              src="http://jigsaw.w3.org/css-validator/images/vcss"
+              alt="Valid CSS!" />
+      </a>
+    </p>
+    
+    <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+        </a>
+    </p>
+    <a href="https://youtube.com/"><img src="./img/yt-logo.jpg" alt="youtube logo" class="yt-logo"></a>
 
     <button class="footer-btn">Language: English
       <i class="fa fa-caret-down"></i>
@@ -329,14 +374,14 @@
     <button class="footer-btn">Restricted Mood: Off
       <i class="fa fa-caret-down"></i>
     </button>
-
+    
     <button class="footer-btn">History
     </button>
     <button class="footer-btn">Help
     </button>
   </div>
   <div class="border-line">
-   
+    
   </div>
   <div class="footer2">
     <span>About</span>
@@ -345,21 +390,21 @@
     <span>Creators</span>
     <span>Advertise</span>
     <span>Developers</span>
-   
+    
   </div>
   <div class="footer3">
     <span>Terms</span>
     <span>Privacy</span>
     <span>Policy & Safety </span>
     <span>Test new features </span>
-   
+    
   </div>
   
 
 </footer>
 <div class="footer4">
-
+  
 </div>
-    
+
 </body>
 </html>

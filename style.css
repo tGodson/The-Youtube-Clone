@@ -25,38 +25,43 @@ header {
     align-items: center;
   }
 
-  #menu-icon {
+  .leftbtn {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-icon {
     width: 35px;
     height: 35px;
     padding: 8px;
     margin-right: 16px;
   }
   
-  #yt-logo {
+  .yt-logo {
     width: 125px;
     height: 24px;
   }
   
-  #search-container {
+  .search-container {
     display: flex;
     justify-content: center;
     width: 60%;
   }
   
-  #search-bar {
+  .search-bar {
     height: 30px;
     width: 65%;
     border: #E2E2E2 1px solid;
     font-size: 1em;
   }
   
-  #search-icon {
+  .search-icon {
     width: 22px;
     height: 22px;
-    padding: px;
+    /* padding: px; */
   }
   
-  #search-button {
+  .search-button {
     margin-right: 60px;
     width: 43px;
     height: 30px;
@@ -70,18 +75,28 @@ header {
     border: 0;
   }
   
+  .rightbtn {
+    display: flex;
+    /* justify-items: center; */
+    align-items: center;
+    margin-left: 10px;
+  }
+
   .topright {
     height: 40px;
     width: 40px;
     background: #fff;
+    margin-left: 15px;
   }
   
-  #sign-in_btn {
+  .sign-in_btn {
     border: none;
     padding: 7px 10px;
     background-color:#167AC6;
     color: #fff;
     border-radius: 4px;
+    width: fit-content;
+    height: fit-content;
   }
 
   .main {
@@ -116,7 +131,7 @@ header {
   /* ----------------------------------------------------------------------------- */
   .container {
     margin-top: 50px;
-    padding: px;
+    /* padding: px; */
     /* border: blue 2px solid; */
   }
 
@@ -316,6 +331,11 @@ header {
     float: right;
   }
   
+  .related-video a {
+    display: flex;
+    text-decoration: none;
+  }
+
   .related-video {
     display: flex;
     margin-bottom: 13px;
@@ -359,6 +379,7 @@ header {
     border-bottom: solid 1px #a1a1a1;
     margin-bottom: 0;
     padding-bottom: 10px;
+    margin-left: 15px;
   }
   .footer1 button {
     border: solid 1px #a1a1a1;
